@@ -42,6 +42,6 @@ exports.bestPracticesAnswers = {
    * @param {String | Number | Boolean} val2
    */
   identity: (val1, val2) => {
-    return identity(val1,1)
+    return val1 === val2
   },
 };

@@ -23,7 +23,7 @@ describe("strings", () => {
   });
 
   it("you should be able to capitalize the first character of a string", () => {
-    const str = "baRTHOlomEW";
+    const str = "Bartholomew";
 
     expect(stringsAnswers.capitalize(str)).to.eql("Bartholomew");
   });

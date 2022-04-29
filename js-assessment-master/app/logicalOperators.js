@@ -7,7 +7,7 @@ exports.logicalOperatorsAnswers = {
    * @param {*} b
    */
   or: (a, b) => {
-    return or(a || b,)
+    return a || b
   },
 
   /**
@@ -16,6 +16,6 @@ exports.logicalOperatorsAnswers = {
    * @param {*} b
    */
   and: (a, b) => {
-    return and(a && b)
+    return a && b
   },
 };

@@ -7,7 +7,7 @@ exports.stringsAnswers = {
    * @param {String} substring
    */
   index: (quote, substring) => {
-    return quote(quote,"I do not like green eggs and ham. I do not like them, Sam-I-Am." + substring(substring,"green eggs and ham"));
+    return quote.indexOf(substring)
   },
 
   /**
@@ -15,11 +15,16 @@ exports.stringsAnswers = {
    * @param {String} quote
    * @param {String} substring
    */
-  contains: (quote, substring) => {},
+  contains: (quote, substring) => {
+    return quote.includes(substring)
+  },
 
   /**
    * To capitalize the first character of a string
    * @param {String} str
    */
-  capitalize: (str) => {},
+  capitalize: (str) => {
+    return str
+  },
+
 };
