@@ -13,7 +13,7 @@ exports.bestPracticesAnswers = {
    * @description Now myObject is a window variable
    */
   globals: () => {
-    myObject = {
+    const myObject = {
       name: "Jory",
     };
 
@@ -22,20 +22,26 @@ exports.bestPracticesAnswers = {
 
   /**
    * ParseInt correctly
-   * @param {String} str
+   * @param {string} str
    */
-  parseInt: (str) => {},
+  parseInt: (str) => {
+    return parseInt(str,10)
+  },
 
   /**
    * Number correctly
    * @param {String} str
    */
-  Number: (str) => {},
+  Number: (str) => {
+    return Number(str,10)
+  },
 
   /**
    * Understand strict comparison
    * @param {Number} val1
    * @param {String | Number | Boolean} val2
    */
-  identity: (val1, val2) => {},
+  identity: (val1, val2) => {
+    return identity(val1,1)
+  },
 };

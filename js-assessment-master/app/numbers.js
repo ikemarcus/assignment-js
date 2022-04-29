@@ -5,7 +5,9 @@ exports.numbersAnswers = {
    * Round a number to the nearest integer
    * @param {Number} num
    */
-  round: (num) => {},
+  round: (num) => {
+    return round(128.8)
+  },
 
   /**
    * Round a number to the next largest integer

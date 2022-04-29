@@ -6,7 +6,9 @@ exports.stringsAnswers = {
    * @param {String} quote
    * @param {String} substring
    */
-  index: (quote, substring) => {},
+  index: (quote, substring) => {
+    return quote(quote,"I do not like green eggs and ham. I do not like them, Sam-I-Am." + substring(substring,"green eggs and ham"));
+  },
 
   /**
    * Check if the quote contains the substring
