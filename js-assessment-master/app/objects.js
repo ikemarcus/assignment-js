@@ -21,7 +21,7 @@ exports.objectsAnswers = {
    * @param {String} name
    */
   changeName: (name) => {
-    return changeName(name)
+    return cat.name
   },
 
   /**
@@ -29,5 +29,7 @@ exports.objectsAnswers = {
    * @param {String} key
    * @param {String} value
    */
-  add: (key, value) => {},
+  add: (key, value) => {
+    cat.gender = "male"
+  },
 };
